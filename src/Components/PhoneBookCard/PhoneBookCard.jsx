@@ -27,8 +27,8 @@ export class PhoneBookCard extends Component {
     // contacts: [...prevState.contacts, contact],
     //   }));
 
-    this.state.contacts.find(contact =>
-      contact.name.toLowerCase().includes(contact.name.toLowerCase()),
+    this.state.contacts.find(cont =>
+      cont.name.toLowerCase().includes(contact.name.toLowerCase()),
     )
       ? alert(`${contact.name} is already in contacts`)
       : this.setState(prevState => ({
